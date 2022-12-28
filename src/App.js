@@ -23,7 +23,7 @@ const App = () => {
       }
 
       dispatch(setCurrentUser(user));
-      console.log(setCurrentUser(user), "app dispatch argument");
+      //  console.log(setCurrentUser(user), "app dispatch argument");
     });
 
     return unsubscribe;

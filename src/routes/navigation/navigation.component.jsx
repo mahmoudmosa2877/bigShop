@@ -24,14 +24,14 @@ import {
 
 const Navigation = () => {
   const currentUser = useSelector(selectCurrentUser);
-  console.log(
-    useSelector((state) => state),
-    "state Selected"
-  );
+  // console.log(
+  //   useSelector((state) => state),
+  //   "state Selected"
+  // );
   // const dispatch = useDispatch();
   const isCartOpen = useSelector(selectIsCartOpen);
   // useContext(CartContext);
-  console.log("render/rerender");
+  //  console.log("render/rerender");
   // useEffect(() => {
   //   dispatch({ type: CART_ACTION_TYPES.SET_IS_CART_OPEN });
   // }, []);

@@ -21,7 +21,7 @@ const ProductCard = ({ product }) => {
   // const { addItemToCart } = useContext(CartContext);
   const cartItems = useSelector(selectCartItems);
   const dispatch = useDispatch();
-  console.log(cartItems, "cartItems in product card");
+  // console.log(cartItems, "cartItems in product card");
   const addProductToCart = () => dispatch(addItemToCart(cartItems, product));
   return (
     <ProductCartContainer>

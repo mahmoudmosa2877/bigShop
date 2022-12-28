@@ -10,13 +10,13 @@ import { CategoryContainer, Title } from "./category.styles";
 
 const Category = () => {
   const { category } = useParams();
-  console.log("rendering-/rerendering category");
+  // console.log("rendering-/rerendering category");
   const categoriesMap = useSelector(selectCategoriesMap);
-  console.log(categoriesMap, "categoriesMap");
+  //  console.log(categoriesMap, "categoriesMap");
   const [products, setProducts] = useState(categoriesMap[category]);
 
   useEffect(() => {
-    console.log("effect ");
+    //  console.log("effect ");
     setProducts(categoriesMap[category]);
   }, [category, categoriesMap]);
 
