@@ -17,3 +17,11 @@ export const selectCategoriesMap = createSelector(
     }, {});
   }
 );
+
+export const selectCategoriesIsloading = createSelector(
+  [selectCategoryReducer],
+  (categoriesSlice) => {
+    console.log(categoriesSlice);
+    return categoriesSlice.isLoading;
+  }
+);
